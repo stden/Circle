@@ -4,18 +4,18 @@ public class Main {
         System.out.println("circle: " + c.x + ", " + c.y + ", " +c.r);
         c.move(1,3);
         System.out.println("circle: " + c.x + ", " + c.y + ", " +c.r);
-        System.out.println(c.dlinaOkr(c.r));
-        System.out.println(c.ploschadKr(c.r));
-        System.out.println(c.diametrOkr(c.r));
-        c.statusCheck();
+        System.out.println(c.circumference());
+        System.out.println(c.circleArea());
+        System.out.println(c.diametrCircle());
+        c.statusCircle();
         if (c.isIncludePoint(-20, 11)) {
             System.out.println("true");
         } else
             System.out.println("false");
         c.changeR(10);
-        c.statusCheck();
+        c.statusCircle();
         Circle c2 = new Circle(7, -8, 50);
-        c2.statusCheck();
+        c2.statusCircle();
 
     }
 
