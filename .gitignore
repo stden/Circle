@@ -1,3 +1,4 @@
+# Игнорирование файлов которые пересоздаются при перекомпиляции или запуске проекта
 # Created by .ignore support plugin (hsz.mobi)
 ### Java template
 *.class
