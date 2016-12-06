@@ -38,18 +38,15 @@ public class Circle {
     }
 
     public double circumference() { // длина окружности
-        double I = 2 * (Math.PI) * this.r;
-        return I;
+        return 2 * (Math.PI) * this.r;
     }
 
     public double circleArea() { //площадь круга
-        double S = Math.PI * (this.r * this.r);
-        return S;
+        return Math.PI * (this.r * this.r);
     }
 
     public double diametrCircle() { // диаметр окружности
-        double D = 2 * this.r;
-        return D;
+        return 2 * this.r;
     }
 
     public String statusCircle() { // проверка состояния
@@ -60,14 +57,8 @@ public class Circle {
     //(x-x0)^2 + (y-y0)^2 <=R^2
     public boolean isIncludePoint(double xx, double yy) { // проверка, включена ли точка в круг
         double EPS = 1e-7;
-        if (((Math.pow((xx - this.x), 2)) - (Math.pow((yy - this.y), 2))) - (Math.pow((this.r), 2)) <= EPS) {
-            return true;
-            // System.out.println("true");
-        } else {
-            return false;
-            //System.out.println("false");
-        }
-
+        // Тут if не нужнен, можно просто return
+        return (((Math.pow((xx - this.x), 2)) - (Math.pow((yy - this.y), 2))) - (Math.pow((this.r), 2)) <= EPS);
     }
 
     public double changeR(double rr) { //увеличение радиуса в n раз
